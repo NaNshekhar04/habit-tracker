@@ -44,3 +44,11 @@ body {
 .btn:active {
   transform: scale(0.98);
 }
+
+
+.habit {
+  background: #b3b0b031;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}

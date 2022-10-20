@@ -1,10 +1,11 @@
 import React from 'react'
+import Habit from './Habit'
 
 const Habits = ({habits}) => {
   return (
     <div>
     {habits.map((habit)=>(
-        <h3 key={habit.id}>{habit.text}</h3>
+        <Habit key={habit.id} habit= {habit}/>
     ))}
     </div>
   )
