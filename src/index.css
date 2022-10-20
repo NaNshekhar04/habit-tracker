@@ -26,3 +26,13 @@ body {
   align-items: center;
   margin-bottom: 20px;
 }
+
+.btn{
+  display: inline-block;
+  background: purple;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
