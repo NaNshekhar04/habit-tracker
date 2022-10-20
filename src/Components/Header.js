@@ -1,12 +1,12 @@
 import React from 'react'
-
-const Header = (props) => {
-  return (
-    <header className='header'>
-        <h1>HABIT TRACKER</h1>
-        <button className='btn'>ADD HABIT</button>
-    </header>
-  )
+import Button from './Button'
+const Header = () => {
+    return (
+        <header className='header'>
+            <h1>HABIT TRACKER</h1>
+            <Button color='green' text='Added' />
+        </header>
+    )
 }
 
 
