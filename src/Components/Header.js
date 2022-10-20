@@ -1,11 +1,12 @@
 import React from 'react'
 
-const Header = () => {
+const Header = (props) => {
   return (
-    <header>
+    <header className='container'>
         <h1>HABIT TRACKER</h1>
     </header>
   )
 }
+
 
 export default Header
