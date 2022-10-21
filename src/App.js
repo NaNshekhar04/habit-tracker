@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "./Components/Header";
 import Habits from "./Components/Habits";
+import AddHabit from "./Components/AddHabit";
 
 function App() {
   const[habits, setHabits] = useState([
@@ -40,6 +41,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      <AddHabit/>
       {habits.length>0 ? (<Habits habits={habits} onDelete={deleteHabit} onSwitch = {switchReminder} />) :  ('No Habits to Track !')}
     </div>
   );
