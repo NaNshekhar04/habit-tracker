@@ -4,6 +4,7 @@ import Habits from "./Components/Habits";
 import AddHabit from "./Components/AddHabit";
 
 function App() {
+  const[showAddHabit, setShowAddHabit] = useState(false);
   const[habits, setHabits] = useState([
     {
       id:1,
@@ -49,9 +50,12 @@ const addHabit = (habit) =>{
   }
 
   return (
-    <div className="App">
-      <Header/>
-      <AddHabit onAdd = {addHabit}/>
+    <div className="container">
+      <Header onAdding ={()=> setShowAddHabit
+        (!showAddHabit)} showAdd = {showAddHabit} />
+
+      {showAddHabit && <AddHabit onAdding = {addHabit}/>}
+
       {habits.length>0 ? (<Habits habits={habits} onDelete={deleteHabit} onSwitch = {switchReminder} />) :  ('No Habits to Track !')}
     </div>
   );
