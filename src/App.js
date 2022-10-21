@@ -25,6 +25,16 @@ function App() {
   }
   ])
 
+
+  // ADD HABITS
+
+const addHabit = (habit) =>{
+  const id = Math.floor(Math.random() * 10000) + 1;
+  const newHabit = {id, ...habit}
+  setHabits([...habits, newHabit]);
+}
+
+
   //DELETE HABITS
 
   const deleteHabit = (id) =>{
@@ -41,7 +51,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <AddHabit/>
+      <AddHabit onAdd = {addHabit}/>
       {habits.length>0 ? (<Habits habits={habits} onDelete={deleteHabit} onSwitch = {switchReminder} />) :  ('No Habits to Track !')}
     </div>
   );
