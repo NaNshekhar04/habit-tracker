@@ -31,10 +31,16 @@ function App() {
   }
 
 
+  //Switching Reminder
+
+  const switchReminder = (id) =>{
+    setHabits(habits.map((habit)=>habit.id===id ? {...habit, reminder: !habit.reminder} : habit))
+  }
+
   return (
     <div className="App">
       <Header/>
-      {habits.length>0 ? (<Habits habits={habits} onDelete={deleteHabit} />) :  ('No Habits to Track !')}
+      {habits.length>0 ? (<Habits habits={habits} onDelete={deleteHabit} onSwitch = {switchReminder} />) :  ('No Habits to Track !')}
     </div>
   );
 }

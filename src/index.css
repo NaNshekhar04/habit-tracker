@@ -58,3 +58,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
+.habit.reminder {
+  border-left: 5px solid green;
+}
