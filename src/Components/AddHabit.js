@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import React from 'react'
 
-const AddHabit = ({onAdd}) => {
+const AddHabit = ({onAdding}) => {
     const [text, setText] = useState('')
     const [day, setDay] = useState('')
     const [reminder, setReminder] = useState(false);
@@ -14,7 +14,7 @@ const AddHabit = ({onAdd}) => {
             return
         }
 
-        onAdd({text, day, reminder})
+        onAdding({text, day, reminder})
 
         setText('')
         setDay('')
