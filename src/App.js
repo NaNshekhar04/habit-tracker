@@ -24,10 +24,17 @@ function App() {
   }
   ])
 
+  //DELETE HABITS
+
+  const deleteHabit = (id) =>{
+    setHabits(habits.filter((habit)=> habit.id !== id));
+  }
+
+
   return (
     <div className="App">
       <Header/>
-      <Habits habits={habits}/>
+      {habits.length>0 ? (<Habits habits={habits} onDelete={deleteHabit} />) :  ('No Habits to Track !')}
     </div>
   );
 }
