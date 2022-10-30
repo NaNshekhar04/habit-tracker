@@ -1,28 +1,36 @@
+// IMPORTING USESTATE HOOK FROM REACT 
+
 import { useState } from 'react';
 import React from 'react'
 
-const AddHabit = ({onAdding}) => {
+const AddHabit = ({ onAdding }) => {
+
+    // SETTING MULTIPLE STATES SO CAN BE CHANGED LATER ! 
+
     const [text, setText] = useState('')
     const [day, setDay] = useState('')
     const [reminder, setReminder] = useState(false);
 
-    const onSubmit = (e) =>{
-        e.preventDefault()
 
-        if(!text){
+    // HANDLING ONSUBMIT EVENT 
+
+    const onSubmit = (e) => {
+        e.preventDefault()
+        if (!text) {
             alert('Please add a Habit')
             return
         }
-
-        onAdding({text, day, reminder})
-
+        onAdding({ text, day, reminder })
         setText('')
         setDay('')
         setReminder(false)
-
     }
 
+
     return (
+
+        // INPUT FORM OF OUR APP 
+
         <form className='add-habit' onSubmit={onSubmit}>
             <div className='form-control'>
                 <label>Habit</label>

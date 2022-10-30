@@ -6,19 +6,32 @@
   padding: 0;
 }
 
+/* STYLING UP OUR BODY  */
+
 body {
   font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  overflow-y: scroll;
+  background: #eee;
 }
 
+/* STYLING UP OUR HABIT TRACKER CONTAINER  */
+
 .container {
-  max-width: 66vh;
+  max-width: 80vh;
   margin: 1px auto;
   overflow: auto;
-  min-height: 300px;
+  min-height: 250px;
   border: 1px solid black;
-  padding: 1px;
+  padding: 15px;
   border-radius: 5px;
+  background-color: #131a26;
+  color: #fff;
+  margin-top: 2%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
+/* STYLING UP OUR HEADER SECTION  */
 
 .header {
   display: flex;
@@ -27,7 +40,9 @@ body {
   margin-bottom: 20px;
 }
 
-.btn{
+/* STYLING UP OUR BUTTONS  */
+
+.btn {
   display: inline-block;
   background: green;
   color: #fff;
@@ -45,6 +60,7 @@ body {
   transform: scale(0.98);
 }
 
+/* STYLING UP A PARTICULAR HABIT  */
 
 .habit {
   background: #b3b0b031;
@@ -62,6 +78,8 @@ body {
 .habit.reminder {
   border-left: 5px solid green;
 }
+
+/* STYLING UP OUR INPUT FORM  */
 
 .form-control input {
   width: 100%;
