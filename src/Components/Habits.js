@@ -4,7 +4,7 @@ import Habit from './Habit'
 const Habits = ({ habits, onDelete, onSwitch }) => {
   return (
 
-    // MAPPING OVER HABITS AND PASSING FUNCTIONS VIA PROPS ! 
+    // MAPPING OVER HABITSLIST AND PASSING FUNCTIONS-DATA VIA PROPS ! 
 
     <div>
       {habits.map((habit) => (
