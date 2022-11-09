@@ -99,3 +99,33 @@ body {
   flex: 2;
   height: 20px;
 }
+
+
+
+.days{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 82px;
+  padding-left: 10%;
+  flex-direction: row;
+}
+
+.days li{
+  list-style: none;
+  margin: 10px;
+
+}
+
+
+.dayStatus{
+  display: flex;
+  position: absolute;
+  margin-left: 80px;
+  padding-left: 10%;
+}
+
+.dayStatus li{
+  list-style: none;
+  margin-right: 90%;
+}
