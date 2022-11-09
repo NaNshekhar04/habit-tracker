@@ -108,13 +108,12 @@ body {
   align-items: center;
   margin-left: 82px;
   padding-left: 10%;
+  gap: 3px;
   flex-direction: row;
 }
 
-.days li{
-  list-style: none;
+.days p{
   margin: 10px;
-
 }
 
 
@@ -125,7 +124,6 @@ body {
   padding-left: 10%;
 }
 
-.dayStatus li{
-  list-style: none;
+.dayStatus p{
   margin-right: 90%;
 }

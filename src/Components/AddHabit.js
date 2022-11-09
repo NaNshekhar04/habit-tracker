@@ -48,15 +48,15 @@ const AddHabit = ({ onAdding }) => {
             <input type="submit" value='Save Habit' className='btn btn-block' />
 
             <section className='weekNames'>
-                    <ul className='days'>
-                        <li>Sunday</li>
-                        <li>Monday</li>
-                        <li>Tuesday</li>
-                        <li>Wednesday</li>
-                        <li>Thursday</li>
-                        <li>Friday</li>
-                        <li>Saturday</li>
-                    </ul>
+                    <div className='days'>
+                        <p>Sunday</p>
+                        <p>Monday</p>
+                        <p>Tuesday</p>
+                        <p>Wednesday</p>
+                        <p>Thursday</p>
+                        <p>Friday</p>
+                        <p>Saturday</p>
+                    </div>
 
             </section>
 
