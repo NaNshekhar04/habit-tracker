@@ -49,7 +49,7 @@ const AddHabit = ({ onAdding }) => {
 
             <section className='weekNames'>
                     <div className='days'>
-                        <p>Sunday</p>
+                        <p>Sunday </p>
                         <p>Monday</p>
                         <p>Tuesday</p>
                         <p>Wednesday</p>
