@@ -100,7 +100,7 @@ body {
   height: 20px;
 }
 
-
+/* STYLING UP OUR WEEK DAYS  */
 
 .days{
   display: flex;
@@ -129,11 +129,7 @@ body {
   margin-right: 90%;
 }
 
-
-/* .status input{
-    cursor: pointer;
-    align-items: center;
-}  */
+/* STYLING UP OUR CHECKBOXES */
 
 .toggle {
   position: relative;

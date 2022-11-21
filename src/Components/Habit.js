@@ -1,7 +1,6 @@
 // import { useState } from 'react'
 import { FaTimes } from 'react-icons/fa'
 const Habit = ({ habit, onDelete, onSwitch }) => {
-  // const [isChecked, setIsChecked] = useState(false)
 
   return (
 
@@ -12,31 +11,31 @@ const Habit = ({ habit, onDelete, onSwitch }) => {
       
         <h3 className='habit-Heading'>{habit.text}
         
-          <div class="toggle">
+          <div className="toggle">
             <input type="checkbox"/>
             <label></label>
           </div>
-          <div class="toggle">
+          <div className="toggle">
             <input type="checkbox" />
             <label></label>
           </div>
-          <div class="toggle">
+          <div className="toggle">
             <input type="checkbox" />
             <label></label>
           </div>
-          <div class="toggle">
+          <div className="toggle">
             <input type="checkbox" />
             <label></label>
           </div>
-          <div class="toggle">
+          <div className="toggle">
             <input type="checkbox" />
             <label></label>
           </div>
-          <div class="toggle">
+          <div className="toggle">
             <input type="checkbox" />
             <label></label>
           </div>
-          <div class="toggle">
+          <div className="toggle">
             <input type="checkbox" />
             <label></label>
           </div>

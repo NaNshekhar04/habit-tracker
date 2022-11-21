@@ -45,18 +45,21 @@ const AddHabit = ({ onAdding }) => {
                 <input type="checkbox" checked={reminder} value={reminder} onChange={(e) => setReminder(e.currentTarget.checked)} />
             </div>
 
-            <input type="submit" value='Save Habit' className='btn btn-block' />
+            <input type="submit" value='Save Habit 💾' className='btn btn-block' />
+
+
+            {/* WEEK DAYS  */}
 
             <section className='weekNames'>
-                    <div className='days'>
-                        <p>Sunday </p>
-                        <p>Monday</p>
-                        <p>Tuesday</p>
-                        <p>Wednesday</p>
-                        <p>Thursday</p>
-                        <p>Friday</p>
-                        <p>Saturday</p>
-                    </div>
+                <div className='days'>
+                    <p className='weeks'>Sunday </p>
+                    <p className='weeks'>Monday</p>
+                    <p className='weeks'>Tuesday</p>
+                    <p className='weeks'>Wednesday</p>
+                    <p className='weeks'>Thursday</p>
+                    <p className='weeks'>Friday</p>
+                    <p className='weeks'>Saturday</p>
+                </div>
 
             </section>
 

@@ -9,7 +9,7 @@ const Header = ({ onAdding, showAdd }) => {
 
         <header className='header'>
             <h1>📑HABIT TRACKER</h1>
-            <Button color={showAdd ? 'red' : 'green '} text={showAdd ? 'Close' : 'Add'} onClick={onAdding} />
+            <Button color={showAdd ? 'red' : 'green '} text={showAdd ? 'Close ❌' : 'Add 🔖'} onClick={onAdding} />
         </header>
     )
 }

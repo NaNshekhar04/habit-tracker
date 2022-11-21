@@ -6,6 +6,7 @@ import AddHabit from "./Components/AddHabit";
 function App() {
   const [showAddHabit, setShowAddHabit] = useState(false);
   const [habits, setHabits] = useState([
+    // INITIAL STATE OF OUR HABITS 
     {
       id: 1,
       text: 'Go For a Walk',
@@ -14,7 +15,7 @@ function App() {
     },
     {
       id: 2,
-      text: 'Go To Gym',
+      text: 'Going to Gym',
       day: 'Oct 5th at 8:00am',
       reminder: true
     },
